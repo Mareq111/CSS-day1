@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+    font-family: Lato , sans-serif;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -8,9 +12,66 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     width: 600px;
     height: 600px;
     background: rgb(34,195,136);
-background: linear-gradient(20deg, rgba(34,195,136,1) 0%, rgba(251,45,253,1) 100%);
+    background: linear-gradient(20deg, rgba(34,195,136,1) 0%, rgba(251,45,253,1) 100%);
 }
+
+/* number "1" */
+
+.number-100-days {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+    gap: 20px;
+    
+}
+.rectangle {
+    display: flex;
+    height: 120px;
+}
+#big-rectangle {
+    position: relative;
+    background-color: #decba9;
+    height: 120px;
+    width: 30px;
+    border-radius: 5px;
+    z-index: 2;
+    border-color: #efe6d6; 
+}
+#small-rectangle {
+    transform-origin: -70px; /* zmienic na inna wartosc */
+    background-color: #e7dac1;
+    border-radius: 5px;
+    width: 30px;
+    max-width: 30px;
+    height: 60px;
+    transform: rotate(45deg) translateX(3px);/* tez chyba zmienic  */
+    z-index: 2; /* zmienic na -1 jka bd git */
+    border: solid 1px  #decba9;
+}
+
+/* first circle = "0" */
+
+#first-circle {
+  position: relative;
+    background-color: transparent;
+    height: 60px;
+    width: 50px;
+    border-radius: 50%;
+    border: 30px #decba9 solid ;    
+}
+/* second circle  = "0" */
+
+#second-circle {
+    position: relative;
+    background-color: transparent;
+    height: 60px;
+    width: 50px;
+    border-radius: 50%;
+    border: 30px #decba9 solid ;
+}
+
